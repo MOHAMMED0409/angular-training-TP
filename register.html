@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<style>
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+    label {
+        margin-top: 10px;
+    }
+    input, select {
+        margin-top: 5px;
+        padding: 5px;
+    }
+    input[type="submit"] {
+        margin-top: 10px;
+        background-color: #333;
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: #ddd;
+    }
+</style>
+<body>
+   <form action="">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <label for="course">Course:</label>
+                <select id="course" name="course">
+                    <option value="MEAN Stack">MEAN Stack</option>
+                    <option value="MERN Stack">MERN Stack</option>
+                    <option value="Gen AI">Gen AI</option>
+                </select>
+                <input type="submit" value="Register">
+            </form>
+</body>
+</html>

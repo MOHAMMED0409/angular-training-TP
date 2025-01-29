@@ -1,39 +1,85 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title></title>
+    <title>LVC WEBSITE</title>
     <meta keyword="occlusion" content="Teating" />
     <style>
-        h1 {
-            background-color: blueviolet;
+        header {
+            background-color: #333;
             color: white;
-            padding: 10px;
             text-align: center;
-            border-radius: 0% 0% 50% 50%;
-            flex: auto;
+            padding: 5px;
+            font-size: larger;
         }
-        .footerstyle {
-            background-color: blueviolet;
-            color: white;
-            padding: 10px;
+        nav {
+            background-color: #f2f2f2;
+            padding: 5px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        nav ul li {
+            float: left;
+        }
+        nav ul li a {
+            display: block;
+            color: #333;
             text-align: center;
-            border-radius: 50% 50% 0% 0%;
-            flex: auto;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            background-color: #ddd;
+        }
+        main {
+            padding: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: rgb(0, 0, 0);
+            text-align: left;
+            padding: 5px;
+            position: fixed;
+            bottom: 0;font-size: small;
+
+            width: 100%;
+        }
+        section {
+            display: flex;
+            justify-content: center;
+            size: 100%;
         }
     </style>
     <script></script>
   </head>
   <body>
-    <h1>
-        Live Virtual Class
-    </h1>
-    List of LVC Courses:
-    <pre>
-        <h2 style="background-color: chocolate; color: black;">MEAN Stack</h2>
-        <h2>MERN Stack</h2>
-        <h2 style="background-color: chocolate; color: black;">Full Stack</h2>
-        <h2>DevOps</h2>
-    </pre>
+    <header>LIVE VIRTUAL SESSION</header>
+    <nav>
+        <ul>
+            <li><a href="" target="common">Home</a></li>
+            <li><a href="./allcourse.html" target="common">All Courses</a></li>
+            <li><a href="./register.html" target="common">Registration</a></li>
+            <li><a href="./gallery.html" target="common">Gallery</a></li>
+            <li><a href="./contact.html" target="common">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="Home">
+            <article>
+                <h1>Welcome to LVC</h1>
+        <p>LVC Courses:</p>
+        <ul>
+            <li>MEAN Stack</li>
+            <li>MERN Stack</li>
+            <li>Gen AI</li>
+        </ul>
+            </article>
+        </section>
+        <iframe name="common" width="100%" height="500px">
+    </main>
   </body>
   <footer class="footerstyle">
     <h3>Designed and Developed by: Khashif</h3>
