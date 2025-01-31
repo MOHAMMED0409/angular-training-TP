@@ -1,0 +1,29 @@
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input,
+select {
+    margin-top: 5px;
+    padding: 5px;
+}
+
+input[type="submit"] {
+    margin-top: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #ddd;
+    color: #333;
+}
