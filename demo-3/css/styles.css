@@ -1,0 +1,71 @@
+body{
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.top-bar{
+  display: flex;
+  flex-direction: row;
+}
+
+.top-bar__logo{
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.top-bar__logo img{
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+}
+
+.top-bar__menu{
+    display:block;
+    margin-right: 20px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.top-bar__menu a{
+    text-decoration: none;
+    margin-left: 20px;
+    color: black;
+}
+
+.top-bar__menu a:hover{
+    text-decoration: underline;
+    color: #ff4800;
+    margin-left: 20px;
+}
+
+.home__content{
+    padding: 50px;
+    margin: 50px;
+}
+
+#create-account{
+    background-color: #ff4800;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#Home{
+    display: flex;
+    flex-direction: row;
+}
+
+.home__image{
+    display: block;
+    width: 100px;
+    height: 100px;
+}
