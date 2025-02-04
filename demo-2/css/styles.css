@@ -21,6 +21,7 @@ header {
     flex-direction: row;
     position: fixed;
     width: 100%;
+    justify-content: space-evenly;
 }
 
 header h1{
@@ -52,6 +53,25 @@ nav ul li a:hover {
     background: #007bff;
 }
 
+header button{
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-left: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+header button:hover {
+    background: white;
+    color: #007bff;
+}
+
+/* --------------------------------------------- */
 main {
     padding: 20px 0;
 }
@@ -73,16 +93,32 @@ section {
     color: #007bff;
     font-size: x-large;
     font-weight: bold;
+    float: left;
+    font-size: x-large;
 }
 #Home ul {
     list-style: none;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     margin-top: 20px;
+    float: left;
 }
 #Home ul li {
     margin: 0 10px;
+    /* display: inline; */
+    /* float: left; */
+    font-size: larger;
+}
+
+video#video{
+    width: 50%;
+    height: auto;
+    float: right;
+}
+
+section#Home{
     display: flex;
+    justify-content: space-evenly;
 }
 /* ---------------------------------------------- */
 h1 {
