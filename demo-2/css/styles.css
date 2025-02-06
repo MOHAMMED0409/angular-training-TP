@@ -24,10 +24,11 @@ header {
     justify-content: space-evenly;
 }
 
-header h1{
+header h1 {
     font-size: larger;
     color: white;
     padding-top: 14px;
+    text-shadow: #333;
 }
 
 nav ul {
@@ -50,10 +51,10 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background: #007bff;
+    background: #0056b3;
 }
 
-header button{
+header button {
     background: #007bff;
     color: white;
     border: none;
@@ -71,7 +72,15 @@ header button:hover {
     color: #007bff;
 }
 
-/* --------------------------------------------- */
+
+header button a {
+    color: white;
+}
+
+header button a:hover {
+    color: #007bff;
+}
+
 main {
     padding: 20px 0;
 }
@@ -79,48 +88,64 @@ main {
 section {
     margin-bottom: 40px;
 }
-/* Home Section */
+
 #Home {
     margin-top: 50px;
 }
-#Home a{
+
+#Home a {
     text-decoration: none;
     color: #007bff;
 }
-#Home p{
+
+#Home p {
     margin-top: 20px;
     text-align: center;
     color: #007bff;
     font-size: x-large;
     font-weight: bold;
     float: left;
-    font-size: x-large;
 }
+
 #Home ul {
     list-style: none;
-    /* display: flex; */
     justify-content: center;
     margin-top: 20px;
     float: left;
 }
+
 #Home ul li {
     margin: 0 10px;
-    /* display: inline; */
-    /* float: left; */
     font-size: larger;
+    display: flex;
+    padding-top: 40px;
 }
 
-video#video{
+p#description {
+    margin-top: 20px;
+    font-size: medium;
+    color: #333;
+    text-align: justify;
+    padding-right: 20px;
+}
+
+video#video {
     width: 50%;
     height: auto;
     float: right;
 }
 
-section#Home{
+section#Home {
     display: flex;
     justify-content: space-evenly;
 }
-/* ---------------------------------------------- */
+
+a#go_to_bottom {
+    text-decoration: none;
+    color: #007bff;
+    font-size: larger;
+}
+
 h1 {
     color: #007bff;
     margin-bottom: 20px;
@@ -135,7 +160,6 @@ form {
 }
 
 label {
-    display: block;
     margin-bottom: 10px;
     font-weight: bold;
 }
@@ -160,6 +184,9 @@ input[type="submit"] {
     cursor: pointer;
     border-radius: 4px;
     font-size: 1rem;
+    margin-top: 5px;
+    text-align: center;
+    margin-left: 40%;
 }
 
 input[type="submit"]:hover {
@@ -167,24 +194,14 @@ input[type="submit"]:hover {
 }
 
 .main {
-    display: flex;
     justify-content: space-around;
     height: auto;
 }
 
 iframe {
     border: 1px solid black;
-}
-
-.contact,
-.map,
-.contact_form {
-    border: solid 1px black;
-    align-items: center;
-    padding-left: 10px;
-    padding-right: 10px;
-    width: 30%;
-    height: auto;
+    width: 100%;
+    height: 50%;
 }
 
 h1 {
@@ -193,32 +210,110 @@ h1 {
 }
 
 form {
-    /* display: flex; */
-    flex-direction: column;
     width: 70%;
     height: auto;
 }
 
-.contact_form form{
-    flex-direction: column;
-        width: 70%;
-        height: auto;
+.contact-header {
+    background-color: #007bff;
+    color: white;
+    width: 100%;
 }
+
+.contact_form form {
+    width: 70%;
+    height: auto;
+}
+
 .contact_form label {
     margin-top: 10px;
 }
-.contact_form input[type="radio"] {
+
+.contact_form input[type="radio"],
+.contact_form input[type="checkbox"] {
     width: 10%;
     padding: 10px;
 }
-.contact_form input[type="checkbox"] {
-    width: 10%;
-    padding: 5px;
+
+.contact h1,
+.map h1 {
+    text-align: left;
 }
+
+.contact {
+    border: solid 1px #007bff;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 30%;
+    height: 15%;
+}
+
+.map {
+    border: solid 1px #007bff;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 30%;
+    height: auto;
+}
+
+.sub-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 20px;
+}
+
+.sub-contact h1 {
+    text-align: center;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
+}
+
+img {
+    width: 50%;
+    height: 10%;
+}
+
+img.shadow-10 {
+    filter: drop-shadow(0, 10);
+}
+
+img.shadow-30 {
+    filter: drop-shadow(0, 30);
+}
+
+img.shadow-100 {
+    filter: drop-shadow(0px, 4px, 4px, 4px(rgb(247, 0, 0)));
+}
+
+img.sepia-10 {
+    filter: sepia(10%);
+}
+
+img.sepia-30 {
+    filter: sepia(30%);
+}
+
+img.sepia-100 {
+    filter: sepia(100%);
+}
+
+img.opacity-10 {
+    filter: opacity(10%);
+}
+
+img.opacity-30 {
+    filter: opacity(30%);
+}
+
+img.opacity-100 {
+    filter: opacity(100%);
 }
 
 th,
@@ -238,9 +333,9 @@ tr:nth-child(even) {
     text-align: center;
     padding: 1rem;
     margin-top: 40px;
+    font-size: xx-small;
 }
 
-/* Links styling */
 a {
     color: #007bff;
     text-decoration: none;
@@ -250,7 +345,41 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Responsive design */
+#All_Courses article{
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    column-count: 3;
+    column-gap:normal;
+}
+
+#All_Courses article h2{
+    margin-bottom: 10px;
+    font-size: x-large;
+    text-align: center;
+}
+
+#All_Courses article div{
+    border: solid 5px #007bff;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+#All_Courses article div:hover{
+    transform: translateY(-20px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+@media (max-width: 992px) {
+    #Home p,
+    #Home ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
@@ -260,29 +389,69 @@ a:hover {
     .map iframe {
         width: 100%;
     }
+
+    header button {
+        margin-left: 0;
+    }
+
+    #Home p,
+    #Home ul {
+        float: none;
+        text-align: center;
+    }
+
+    section#Home {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    video#video {
+        width: 100%;
+        float: none;
+    }
+
+    .contact,
+    .map {
+        width: 100%;
+    }
+
+    .sub-contact {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
-/* ---------------------------------------------- */
-/* All Courses */
-#All_Courses {
-    margin-top: 50px;
-}
-#All_Courses h1 {
-    margin-bottom: 20px;
-    text-align: center;
-    font-size: xx-large;
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header button {
+        margin-top: 10px;
+    }
 }
 
-#All_Courses h2{
-    margin-bottom: 20px;
-    text-align: center;
-    font-size: x-large;
-    padding-top: 10px;
+/* ------------------------ */
+.sale-image {
+    margin: 50px;
+    width: 500px;
+    height: 500px;
+    background: url(/demo-2/images/download.png) no-repeat;
+    position: relative;
+    animation: repeatit 10s linear;
 }
+@keyframes repeatit {
+    from {
+        left: 0%;
+    }
 
-#All_Courses p {
-    font-size: medium;
-    margin-top: 20px;
-    text-align: center;
+    to {
+        left: 30%;
+    }
 }
-/* ---------------------------------------------------- */
