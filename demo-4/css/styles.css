@@ -1,10 +1,6 @@
 body{
-    background-color: #FBF5DD;
 }
-header nav{
-    position: fixed;
-    color: #DDA853;
-}
+
 .carousel-item {
     height: 30vh;
 }
@@ -15,19 +11,21 @@ header nav{
     object-fit:cover;
 }
 
+#home {
+    padding-top: 10px;
+}
+
 .display-1{
     font-size: x-large;
     font-style: oblique;
-    padding-top: 50px;
     text-align: center;
     text-decoration: underline;
     color: #16404D;
 }
 
 .rounded, .float-right img{
-    padding-top: 80px;
     width: 100vh;
-    height: 60vh;
+    height: 45vh;
     padding-right: 20px;
     object-fit: cover;
 }
@@ -73,10 +71,10 @@ transition: 400ms;
     text-align: justify;
 }
 
-.card-header{
+.Cards h1{
     color: #16404D;
     text-decoration: underline;
-    font-size:xx-large;
+    font-size: 4.5rem;
     text-align: center;
 }
 
@@ -84,4 +82,49 @@ transition: 400ms;
     background-color: #16404D;
     color: white;
     transform: scale(1.1, 1.1);
+}
+
+.Cards{
+    padding-top: 0px;
+    text-align: center;
+    background-color: #FBF5DD;
+}
+
+#registration{
+    padding-top: 10px;
+    background-color: #FBF5DD;
+    border: 5px solid #16404D;
+    padding: 20px;
+    width: 50%;
+    align-content: center;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#registration h1{
+    font-size: 3rem;
+    color: #16404D;
+    text-decoration: underline;
+    text-align: center;
+}
+
+#registration input[type="text"], #registration input[type="email"], #registration input[type="password"], #registration input[type="submit"]{
+    margin-bottom: 10px;
+}
+
+#registration button{
+    background-color: #16404D;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#registration button:hover{
+    background-color: #DDA853;
+    color: white;
 }
