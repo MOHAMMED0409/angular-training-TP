@@ -44,7 +44,7 @@ body{
 
 .rounded, .float-right img{
     width: 100vh;
-    height: 45vh;
+    height: 50vh;
     padding-right: 20px;
     object-fit: cover;
 }
@@ -89,7 +89,7 @@ div .card {
 .Cards h1{
     color: #16404D;
     text-decoration: underline;
-    font-size: 4.5rem;
+    font-size: 2rem;
     text-align: center;
 }
 
@@ -119,7 +119,7 @@ div .card {
 }
 
 #registration h1{
-    font-size: 3rem;
+    font-size: 2rem;
     color: #16404D;
     text-decoration: underline;
     text-align: center;
@@ -246,3 +246,28 @@ div .card {
 }
 /* End of Gallery */
 /* ******************************************************* */
+/* Tables */
+#table h1{
+    font-size: 2rem;
+}
+
+#table{
+    width: 50%;
+    border: 5px solid #16404D;
+    margin-top: 15px;
+    border-radius: 10px;
+    position: relative;
+
+}
+
+/* ------------------------------------------------------------------------ */
+/* Contact Us */
+.sub-contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 20px;
+}
+.contact_form form{
+    width: 100%;
+}
