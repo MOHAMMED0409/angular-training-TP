@@ -14,6 +14,7 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -46,63 +47,85 @@
           ></iframe>
         </div>
         <div class="sub-contact">
-        <div class="contact">
-          <h1>Contact Address</h1>
-          <address>
-            <p>Live Virtual Session</p>
-            <p>123 Main Street</p>
-            <p>Springfield, IL 62701</p>
-            <p>Phone: 217-555-5555</p>
-          </address>
-        </div>
-        <div class="contact_form">
-          <h1>Contact Details</h1>
-          <form>
-            <div class="form-group">
-              <label for="exampleFormControlInput1">Email address</label>
-              <input
-                type="email"
-                class="form-control"
-                id="exampleFormControlInput1"
-                placeholder="name@example.com"
-              />
-            </div>
-            <div class="form-group">
-              <label for="exampleFormControlSelect1">Example select</label>
-              <select class="form-control" id="exampleFormControlSelect1">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="exampleFormControlSelect2"
-                >Example multiple select</label
-              >
-              <select
-                multiple
-                class="form-control"
-                id="exampleFormControlSelect2"
-              >
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="exampleFormControlTextarea1">Example textarea</label>
-              <textarea
-                class="form-control"
-                id="exampleFormControlTextarea1"
-                rows="3"
-              ></textarea>
-            </div>
-          </form>
-        </div>
+          <div class="contact">
+            <h1>Contact Us</h1>
+            <i class="fa-regular fa-map"> Address</i>
+            <address>
+              <p>Live Virtual Session</p>
+              <p>123 Main Street</p>
+              <p>Springfield, IL 62701</p>
+            </address>
+            <i class="fa-regular fa-envelope"> Mail</i>
+            <address>
+                <p>info@example.com</p></address>
+            <address>
+                <i class="fa-regular fa-address-book"> Phone:</i>
+                <p> 217-555-5555</p>
+            </address>
+          </div>
+          <div class="contact_form">
+            <h1>Contact Details</h1>
+            <form>
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Email address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="name@example.com"
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlInput2">Full Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleFormControlInput2"
+                  placeholder="Full Name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlInput3">Gender</label>
+                <div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+  <label class="form-check-label" for="exampleRadios1">
+    Male
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+  <label class="form-check-label" for="exampleRadios2">
+    Female
+  </label>
+</div>
+<div class="form-check disabled">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+  <label class="form-check-label" for="exampleRadios3">
+    Other
+  </label>
+</div>
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">Select Course</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>MEAN Stack</option>
+                  <option>MERN Stack</option>
+                  <option>Gen AI</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1"
+                  >Feedbacks</label
+                >
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                ></textarea>
+              </div>
+              <button type="button" class="btn btn-outline-success">Contact Us</button>
+            </form>
+          </div>
         </div>
       </div>
     </section>
